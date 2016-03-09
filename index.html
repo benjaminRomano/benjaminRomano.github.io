@@ -1,6 +1,8 @@
 <html>
     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/app.js"></script>
     <meta name="viewport" content="width=device-width">
     <body>
         <!--Welcome Section -->
@@ -20,7 +22,7 @@
                 </div>
                 <div class="about-me">
                     <p class="about-me-text bottom-left-border">
-                        Hi, I'm a junior at The University of Alabama. Studying Computer Science.
+                        Hi, I'm a junior at The University of Alabama. Studying computer science.
                     </p>
                 </div>
             </div>
@@ -44,7 +46,7 @@
                             <br>
                             Minor in Applied Mathematics, 
                             <br>
-                            Minor in Computer-Based honors
+                            Minor in Computer-Based Honors
                         </p>
                         <p><b>GPA:</b> 4.0/4.0</p>
                         
@@ -73,22 +75,75 @@
             </div>
         </section>
         
+        <section class="row section projects-section">
+            <div class="section-header">
+                <h4 class="section-title">Projects</h4>
+            </div>
+        </section>
+        
         <!-- Skills Section-->
         <div class="row skills-header">
-            <div class="large-2 large-offset-2 columns skill active">
+            <div id="languageSelector" class="large-2 large-offset-2 columns skill active">
                 <h5 > Languages </h5>
             </div>
-            <div class="large-2 columns skill">
+            <div id="databaseSelector" class="large-2 columns skill">
                 <h5 > Databases </h5>
             </div>
-            <div class="large-2 columns skill">
+            <div id="frameworkSelector" class="large-2 columns skill">
                 <h5 > Frameworks </h5>
             </div>
-            <div class="large-2 end columns skill">
+            <div id="gameEngineSelector" class="large-2 end columns skill">
                 <h5 > Game Engines </h5>
             </div>
         </div>
-        <section class="row section">
+        <section class="row section skills-section">
+            <div id="languages" class="tab active">
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> C# </p>
+                    <p class="large-2 columns skill-item"> JavaScript </p>
+                    <p class="large-2 columns end skill-item"> Node.js </p>
+                </div>
+                <div class="row" >
+                    <p class="large-2 large-offset-3 columns skill-item"> Ruby </p>
+                    <p class="large-2 columns skill-item"> Python </p>
+                    <p class="large-2 columns end skill-item"> Java </p>
+                </div>
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> C++ </p>
+                    <p class="large-2 columns skill-item"> Perl </p>
+                    <p class="large-2 columns end skill-item"> Go </p>
+                </div>
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> FORTRAN</p>
+                    <p class="large-2 columns skill-item"> Scheme </p>
+                    <p class="large-2 columns end skill-item"> TypeScript</p>
+                </div>
+            </div>
+            <div id="frameworks" class="tab">
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> Angular.js </p>
+                    <p class="large-2 columns skill-item"> ASP.NET Web API </p>
+                    <p class="large-2 columns end skill-item"> ASP.NET MVC </p>
+                </div>
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> Ruby on Rails </p>
+                    <p class="large-2 columns skill-item"> Django </p>
+                    <p class="large-2 columns end skill-item"> MEAN Stack </p>
+                </div>
+            </div>
+            <div id="databases" class="tab">
+                <div class="row">
+                    <p class="large-2 large-offset-3 columns skill-item"> SQL Server </p>
+                    <p class="large-2 columns skill-item"> MySQL </p>
+                    <p class="large-2 columns end skill-item"> MongoDb </p>
+                </div>
+            </div>
+            <div id="gameEngines" class="tab">
+                <div class="row">
+                    <p class="large-2 large-offset-4 columns skill-item"> Unreal Engine </p>
+                    <p class="large-2 columns end skill-item"> Unity Engine </p>
+                </div>
+            </div>
         </section>               
         
         <!--Footer Section-->
