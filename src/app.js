@@ -1,7 +1,7 @@
 let skillGroups = {
     '#languages': ['C#', 'JavaScript', 'Node.js', 'Ruby', 'Python', 'Java', 'C++', 'Perl', 'Go', 'FORTRAN', 'Scheme', 'TypeScript'],
     '#databases': ['SQL Server', 'MySql', 'MongoDb'],
-    '#frameworks': ['Angular.js', 'ASP.NET Web API', 'ASP.NET MVC', 'Ruby on Rails', 'Django', 'MEAN Stack'],
+    '#frameworks': ['AngularJS', 'ASP.NET Web API', 'ASP.NET MVC', 'Ruby on Rails', 'Django', 'MEAN Stack'],
     '#gameEngines': ['Unreal Engine', 'Unity Engine']
 };
 
