@@ -17,26 +17,6 @@ body {
      font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 
-ul {
-    margin: 0.75em 0;
-    padding: 0 1em;
-    list-style: none;
-}
-
-
-li:before { 
-    content: "";
-    border-color: transparent @accent;
-    border-style: solid;
-    border-width: 0.45em 0 0.45em 0.45em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 1.25em;
-    position: relative;
-}
-
 .inline-block {
     display: inline-block;
 }
@@ -123,6 +103,27 @@ li:before {
     .companies {
         margin-left: 5vw;
     }
+    
+    
+    ul {
+        margin: 0.75em 0;
+        padding: 0 1em;
+        list-style: none;
+    }
+
+
+    li:before { 
+        content: "";
+        border-color: transparent @accent;
+        border-style: solid;
+        border-width: 0.45em 0 0.45em 0.45em;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1em;
+        top: 1.25em;
+        position: relative;
+    }
 }
 
 
@@ -202,6 +203,8 @@ li:before {
     font-size: 1.1rem;
 }
 
+
+
 .skills-header {
     border-top: 2px solid @dark-border;
     border-right: 2px solid @dark-border;
@@ -218,21 +221,28 @@ li:before {
         cursor: pointer;
         height: 4rem;
         border-left: 1px solid @light-border;
+        
+        @media only screen and (max-width: 40em) {
+            border-bottom: 1px solid @dark-border;
+        }
+        
         padding-bottom: 2px;
         
         &.active {
             background-color: @accent;
             color: white;
             
-            &:after {
-                position: relative;
-                content: "";
-                top: -10px;
-                width: 0;
-                height: 0;
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-bottom: 20px solid white;    
+            @media only screen and (min-width: 40.063em) {
+                &:after {
+                    position: relative;
+                    content: "";
+                    top: -10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
+                    border-bottom: 20px solid white;    
+                }
             }
         }
         

@@ -5,23 +5,6 @@ body {
   background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
-ul {
-  margin: 0.75em 0;
-  padding: 0 1em;
-  list-style: none;
-}
-li:before {
-  content: "";
-  border-color: transparent #FFA015;
-  border-style: solid;
-  border-width: 0.45em 0 0.45em 0.45em;
-  display: block;
-  height: 0;
-  width: 0;
-  left: -1em;
-  top: 1.25em;
-  position: relative;
-}
 .inline-block {
   display: inline-block;
 }
@@ -88,6 +71,23 @@ li:before {
 }
 .experience-section .companies {
   margin-left: 5vw;
+}
+.experience-section ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+.experience-section li:before {
+  content: "";
+  border-color: transparent #FFA015;
+  border-style: solid;
+  border-width: 0.45em 0 0.45em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 1.25em;
+  position: relative;
 }
 .skills-section {
   min-height: 28vh;
@@ -168,19 +168,26 @@ li:before {
   border-left: 1px solid #90A4AE;
   padding-bottom: 2px;
 }
+@media only screen and (max-width: 40em) {
+  .skills-header .skill {
+    border-bottom: 1px solid #6d6e70;
+  }
+}
 .skills-header .skill.active {
   background-color: #FFA015;
   color: white;
 }
-.skills-header .skill.active:after {
-  position: relative;
-  content: "";
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid white;
+@media only screen and (min-width: 40.063em) {
+  .skills-header .skill.active:after {
+    position: relative;
+    content: "";
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+  }
 }
 .skills-header .skill:last-child {
   border-right: 1px solid #90A4AE;
