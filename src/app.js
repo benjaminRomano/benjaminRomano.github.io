@@ -46,7 +46,7 @@ function createSkills() {
 function createSkillRow(skillEles) {
     
     if (skillEles.length == 3) {
-        skillEles[0].addClass('small-offset-2 medium-offset-2 large-offset-3');
+        skillEles[0].addClass('small-offset-1 medium-offset-2 large-offset-3');
     } else if (skillEles.length == 2) {
         skillEles[0].addClass('small-offset-3 medium-offset-3 large-offset-4');
     } else if (skillEles.length == 1) {

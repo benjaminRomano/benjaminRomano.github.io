@@ -36,7 +36,6 @@ li:before {
   text-align: right;
 }
 .welcome-section {
-  height: 100vh;
   text-align: center;
   margin-top: 20vh;
 }
@@ -72,9 +71,6 @@ li:before {
   display: inline-block;
   padding-left: 10px;
   padding-bottom: 10px;
-}
-.degree-section {
-  margin-top: -10vh;
 }
 .degree-section .degree-dates {
   width: 100%;
