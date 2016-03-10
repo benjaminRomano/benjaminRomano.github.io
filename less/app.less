@@ -1,0 +1,246 @@
+@heading: #1A64AC;
+@heading-accent: #1B1498;
+@accent: #FFA015;
+@dark-border: #6d6e70;
+@light-border: #90A4AE;
+@light-background: #f2f2f2;
+@minor-text-size: .9rem;
+@minor-line-height: 1.8rem;
+@basic-padding: 10px;
+
+body {
+     background:url(../img/background.png) repeat; 
+     background-attachment:fixed; 
+     background-position: center bottom;
+     background-size: cover;
+     
+     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+
+
+li:before { 
+    content: "";
+    border-color: transparent @accent;
+    border-style: solid;
+    border-width: 0.45em 0 0.45em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1.25em;
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.right-aligned {
+    float: right;
+    display: block;
+    text-align: right;
+}
+
+.right-aligned-inline{
+   display: inline-block;
+   float: right; 
+   text-align: right;
+}
+
+.welcome-section {
+    height: 100vh;
+    text-align: center;
+    margin-top: 20vh;
+    
+    .profile-pic {
+        height: 20vh;
+        border-radius: 100%;
+    }
+    
+    .welcome-content {
+        color: white;
+        margin-bottom: 25vh;
+    }
+}
+
+.section {
+    border: 2px solid @dark-border;
+    background-color: white;
+    margin-bottom: 10vh;
+    padding: 3vh 5vw 5vh 5vw;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.25);
+    
+    
+    .section-header {
+        padding-left: @basic-padding;
+        border-left: 8px solid @heading-accent;
+        
+        .section-title {
+            color: @heading;
+        }        
+    }
+    
+    .section-sub-header {
+        margin-top: 2vh;
+        padding-left: @basic-padding;
+        color: @heading;
+        border-left: 6px solid @heading-accent;
+    }
+}
+
+.about-me-section {
+    .about-me-text {
+        display: inline-block;
+        padding-left: @basic-padding;
+        padding-bottom: @basic-padding;
+    }
+}
+
+.degree-section {
+    
+    margin-top: -10vh;
+    .degree-dates {
+        width: 100%;
+        font-weight: bold;
+        font-style: italic;
+        font-size: @minor-text-size;
+        line-height: @minor-line-height;
+    }
+}
+
+.experience-section {
+    .job-dates {
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 0;
+        font-size: @minor-text-size;
+        line-height: @minor-line-height;
+    }
+    .companies {
+        margin-left: 5vw;
+    }
+}
+
+
+.skills-section {
+    min-height: 28vh;
+    border: 2px solid @accent;
+    background-color: white;
+    margin-bottom: 10vh;
+    padding: 3vh 0vw 5vh 0vw;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.25);
+
+    .skill-item {
+        border: 3px solid @heading-accent;
+        color: @heading-accent;
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    .tab {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.project-section {
+    .projects {
+        margin-left: 5vw;
+    }
+}
+    
+.bottom-left-border {
+    border-left: 1px solid @accent;
+    border-bottom: 1px solid @accent;
+}
+
+.top-right-border {
+    border-right: 1px solid @accent;
+    border-top: 1px solid @accent;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.in-progress {
+    padding-right: 3px;
+    color: @accent;
+    font-size: 1.1rem;
+}
+
+.bounce1 {
+    animation: bounce 1s infinite;
+    color: @accent;
+    font-size: 1.1rem;
+}
+
+.bounce2 {
+    animation: bounce 1s infinite .1s;
+    color: @accent;
+    font-size: 1.1rem;
+}
+
+.bounce3 {
+    animation: bounce 1s infinite .2s;
+    color: @accent;
+    font-size: 1.1rem;
+}
+
+.skills-header {
+    border-top: 2px solid @dark-border;
+    border-right: 2px solid @dark-border;
+    border-left: 2px solid @dark-border;
+    background-color: @light-background;
+    color: @heading;
+    text-align: center;
+    
+    .skill:hover {
+        color: @accent;
+    }
+
+    .skill {
+        cursor: pointer;
+        height: 4rem;
+        border-left: 1px solid @light-border;
+        padding-bottom: 2px;
+        
+        &.active {
+            background-color: @accent;
+            color: white;
+            
+            &:after {
+                position: relative;
+                content: "";
+                top: -10px;
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid white;    
+            }
+        }
+        
+        &:last-child {
+            border-right: 1px solid @light-border;
+            padding-bottom: 2px;
+        }
+    }
+}

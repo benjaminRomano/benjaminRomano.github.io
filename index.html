@@ -1,45 +1,45 @@
 <html>
-    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/app.css">
+    <script src="public/js/vendor/jquery.min.js"></script>
+    <script src="public/js/app.js"></script>
     <meta name="viewport" content="width=device-width">
     <body>
         <!--Welcome Section -->
         <section class="welcome-section">
+            <img class="profile-pic" src="public/img/profile-pic.png">
             <div class="row">
-                <div class="welcome-content large-6 large-centered columns">
+                <div class="welcome-content large-12 large-centered columns">
                     <h1>Ben Romano</h1>
                 </div>
             </div>
-            <!--TODO: Add Arrow here with CSS animations-->
-        </section>
         
-        <!--About Me Section-->
         <section class="row section">
                 <div class="section-header">
                     <h4 class="section-title">About Me</h4>
                 </div>
-                <div class="about-me">
+                <div>
                     <p class="about-me-text bottom-left-border">
-                        Hi, I'm a junior at The University of Alabama. Studying computer science.
+                        Hi! I'm a junior at The University of Alabama studying computer science. 
+                        I'm currently finishing up my bachelor's degree this semester and plan to finish my masters degree next spring.
+                        I'm interested in web development and have been currently doing a lot of work using angular.js and typescript.
+                        Currently, my main language is JavaScript; however, I enjoy working in C# and have been experimenting with functional programming languages.
                     </p>
                 </div>
             </div>
         </section>
+        </section>
         
         <!--Education Section-->
-        <section class="row section">
+        <section class="row section degree-section">
                 <div class="section-header">
                     <h4 class="section-title">Education</h4>
                 </div>
                 <div class="row">
-                    <div class="large-5 columns degree-info">
-                        <p class="right-aligned-inline degree-dates">August 2013 - May 2016</p>
+                    <div class="large-5 columns">
+                        <p class="degree-dates">August 2013 - May 2016</p>
                         <p>
-                            The University of Alabama
-                            <br>
-                            Tuscaloosa, AL
+                            The University of Alabama &mdash; Tuscaloosa, AL
                         </p>
                         <p>
                             B.S. in Computer Science, 
@@ -51,12 +51,10 @@
                         <p><b>GPA:</b> 4.0/4.0</p>
                         
                     </div>
-                    <div class="large-5 offset-1 columns degree-info">
-                        <p class="right-aligned-inline degree-dates">January 2015 - May 2017</p>
+                    <div class="large-5 offset-1 columns">
+                        <p class="degree-dates">January 2015 - May 2017</p>
                         <p>
-                            The University of Alabama
-                            <br>
-                            Tuscaloosa, AL
+                            The University of Alabama &mdash; Tuscaloosa, AL
                         </p>
                         <p>
                             M.S. in Computer Science
@@ -75,80 +73,103 @@
             </div>
         </section>
         
-        <section class="row section projects-section">
+        <!--Project Section-->
+        <section class="row section project-section">
             <div class="section-header">
                 <h4 class="section-title">Projects</h4>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <h5 class="section-sub-header">Bottom-Dock</h5>
+                    <img src="public/img/bottom-dock.png">
+                    <p>
+                        Bottom-dock is an atom-package for the Atom text editor to simplify the process of creating packages by providing a framework to create panels on the bottom of the editor.
+                        Using this framework, I have created 4 packages: Linter-Manager, TODO-Manager, Gulp-Manager and Grunt-Manager.
+                        These five packages altogether have amassed over 18,000 downloads. 
+                    </p>
+                    <a href="https://atom.io/users/benjaminRomano">Click here to view the packages </a>
+                </div>
+                <div class="project">
+                    <h5 class="section-sub-header">H1Z1Atlas.com</h5>
+                    <img src="public/img/h1z1atlas.png">
+                    <p class="inline-block">
+                        H1Z1Atlas.com is an interactive map for the game H1Z1, which displays common points of interest (POIs) in the game.
+                        Users can also create groups with friends and add their own custom markers which will be synced to all other members of the group. 
+                        The website recieved over 300,000 page views in the first month.
+                    </p>
+                    <a href="http://h1z1atlas.com">Click here to go to the website</a>
+                </div>
+            </div>
+        </section>
+        
+        <!--Work Experience-->
+        <section class="row section experience-section">
+            <div class="section-header">
+                <h4 class="section-title">Experience</h4>
+            </div>
+            <div class="companies">
+                <div>
+                    <h5 class="section-sub-header">Renaissnance Learning</h5>
+                        <p class="right-aligned-inline job-dates">August 2013 - May 2016</p>
+                        <p> Software Engineer, Intern </p>
+                        <ul>
+                            <li> Created and maintained reusable components used across multiple dashboards. </li>
+                            <li> Helped redesign dashboards to better conform to Flux architecture and to increase component reusability </li>
+                            <li> Built a tool to find differences between two HBase databases </li>
+                            <li> Created a service to collect data from TeamCity; built an accompanying website to visual data </li>
+                            <li> Managed migration of school's data; databases contained multiple tables with over a million records </li>
+                        </ul>
+                </div>
+                <div>
+                    <h5 class="section-sub-header">Center for Advanced Public Safety</h5>
+                        <p class="right-aligned-inline job-dates">September 2013 - May 2015</p>
+                        <p> Software Developer</p>
+                        <ul>
+                            <li> Designed a severe weather simulation for the Oculus Rift using the Unreal Engine </li>
+                            <li> Created a scripting framework so developers can add new events to the simulation without writing code </li>
+                        </ul>
+                </div>                
+                <div>
+                    <h5 class="section-sub-header">Mercedes-Benz R&D North America</h5>
+                        <p class="right-aligned-inline job-dates">May 2014- August 2014</p>
+                        <p> Software Engineer, Intern </p>
+                        <ul>
+                            <li> Implemented DBSCAN clustering algorithm to find patterns in driver data </li>
+                            <li> Classified clusters as a specific point of interest using Google Maps API </li>
+                            <li> Visualized clusters on Google Maps and displayed likelihood of next destination </li>
+                        </ul>
+                </div>
+                <div>
+                    <h5 class="section-sub-header">Buckete.com</h5>
+                        <p class="right-aligned-inline job-dates">July 2014 - August 2014</p>
+                        <p> Front-End Developer </p>
+                        <ul>
+                            <li> Helped develop a website using the Django framework for a Silicon Valley startup </li>
+                        </ul>
+                </div>                
             </div>
         </section>
         
         <!-- Skills Section-->
         <div class="row skills-header">
-            <div id="languageSelector" class="large-2 large-offset-2 columns skill active">
+            <div id="languageSelector" class="large-2 medium-3 large-offset-2 columns skill active">
                 <h5 > Languages </h5>
             </div>
-            <div id="databaseSelector" class="large-2 columns skill">
+            <div id="databaseSelector" class="large-2 medium-3 columns skill">
                 <h5 > Databases </h5>
             </div>
-            <div id="frameworkSelector" class="large-2 columns skill">
+            <div id="frameworkSelector" class="large-2 medium-3 columns skill">
                 <h5 > Frameworks </h5>
             </div>
-            <div id="gameEngineSelector" class="large-2 end columns skill">
+            <div id="gameEngineSelector" class="large-2 medium-3 end columns skill">
                 <h5 > Game Engines </h5>
             </div>
         </div>
         <section class="row section skills-section">
-            <div id="languages" class="tab active">
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> C# </p>
-                    <p class="large-2 columns skill-item"> JavaScript </p>
-                    <p class="large-2 columns end skill-item"> Node.js </p>
-                </div>
-                <div class="row" >
-                    <p class="large-2 large-offset-3 columns skill-item"> Ruby </p>
-                    <p class="large-2 columns skill-item"> Python </p>
-                    <p class="large-2 columns end skill-item"> Java </p>
-                </div>
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> C++ </p>
-                    <p class="large-2 columns skill-item"> Perl </p>
-                    <p class="large-2 columns end skill-item"> Go </p>
-                </div>
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> FORTRAN</p>
-                    <p class="large-2 columns skill-item"> Scheme </p>
-                    <p class="large-2 columns end skill-item"> TypeScript</p>
-                </div>
-            </div>
-            <div id="frameworks" class="tab">
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> Angular.js </p>
-                    <p class="large-2 columns skill-item"> ASP.NET Web API </p>
-                    <p class="large-2 columns end skill-item"> ASP.NET MVC </p>
-                </div>
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> Ruby on Rails </p>
-                    <p class="large-2 columns skill-item"> Django </p>
-                    <p class="large-2 columns end skill-item"> MEAN Stack </p>
-                </div>
-            </div>
-            <div id="databases" class="tab">
-                <div class="row">
-                    <p class="large-2 large-offset-3 columns skill-item"> SQL Server </p>
-                    <p class="large-2 columns skill-item"> MySQL </p>
-                    <p class="large-2 columns end skill-item"> MongoDb </p>
-                </div>
-            </div>
-            <div id="gameEngines" class="tab">
-                <div class="row">
-                    <p class="large-2 large-offset-4 columns skill-item"> Unreal Engine </p>
-                    <p class="large-2 columns end skill-item"> Unity Engine </p>
-                </div>
-            </div>
+            <div id="languages" class="tab active"> </div>
+            <div id="frameworks" class="tab"> </div>
+            <div id="databases" class="tab"> </div>
+            <div id="gameEngines" class="tab"> </div>
         </section>               
-        
-        <!--Footer Section-->
-        <section>
-            
-        </section>
     </body>
 </html>
