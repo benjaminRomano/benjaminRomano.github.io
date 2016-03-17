@@ -100,7 +100,7 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .skills-section .skill-item {
-  border: 3px solid #1B1498;
+  border: 2px solid #1B1498;
   color: #1B1498;
   text-align: center;
   margin-right: 10px;
